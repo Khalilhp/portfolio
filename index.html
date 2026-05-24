@@ -1,12 +1,16 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Khalil Ahmed | Cyber Infrastructure Engineer</title>
+
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;800&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
+
 *{
 margin:0;
 padding:0;
@@ -24,12 +28,12 @@ overflow-x:hidden;
 body::before{
 content:'';
 position:fixed;
-width:600px;
-height:600px;
-background:#00ffc355;
-filter:blur(120px);
-top:-200px;
-right:-200px;
+width:650px;
+height:650px;
+background:#00ffc344;
+filter:blur(130px);
+top:-220px;
+right:-220px;
 z-index:-2;
 animation:float 8s ease-in-out infinite;
 }
@@ -37,22 +41,14 @@ animation:float 8s ease-in-out infinite;
 body::after{
 content:'';
 position:fixed;
-width:500px;
-height:500px;
+width:550px;
+height:550px;
 background:#0066ff33;
 filter:blur(120px);
-bottom:-200px;
-left:-200px;
+bottom:-220px;
+left:-220px;
 z-index:-2;
 animation:float2 10s ease-in-out infinite;
-}
-
-@keyframes float{
-0%,100%{transform:translateY(0px);}50%{transform:translateY(40px);}
-}
-
-@keyframes float2{
-0%,100%{transform:translateY(0px);}50%{transform:translateY(-40px);}
 }
 
 .grid-bg{
@@ -65,26 +61,38 @@ background-size:40px 40px;
 z-index:-3;
 }
 
+@keyframes float{
+0%,100%{transform:translateY(0);}
+50%{transform:translateY(40px);}
+}
+
+@keyframes float2{
+0%,100%{transform:translateY(0);}
+50%{transform:translateY(-40px);}
+}
+
 header{
 position:fixed;
+top:0;
+left:0;
 width:100%;
 padding:20px 8%;
 display:flex;
 justify-content:space-between;
 align-items:center;
-backdrop-filter:blur(12px);
-background:rgba(5,8,22,0.6);
+background:rgba(5,8,22,0.75);
+backdrop-filter:blur(18px);
 border-bottom:1px solid rgba(0,255,195,0.15);
 z-index:999;
 }
 
 .logo{
 font-family:'Orbitron',sans-serif;
-font-size:28px;
+font-size:30px;
 font-weight:800;
-color:#00ffc3;
 letter-spacing:3px;
-text-shadow:0 0 15px #00ffc3;
+color:#00ffc3;
+text-shadow:0 0 18px #00ffc3;
 }
 
 nav a{
@@ -105,9 +113,9 @@ min-height:100vh;
 display:flex;
 align-items:center;
 justify-content:space-between;
-padding:120px 8%;
-flex-wrap:wrap;
+padding:130px 8%;
 gap:50px;
+flex-wrap:wrap;
 }
 
 .hero-text{
@@ -116,18 +124,18 @@ min-width:320px;
 }
 
 .tag{
-color:#00ffc3;
-letter-spacing:4px;
-margin-bottom:15px;
 font-size:18px;
+letter-spacing:4px;
 text-transform:uppercase;
+margin-bottom:20px;
+color:#00ffc3;
 }
 
 .hero h1{
 font-family:'Orbitron',sans-serif;
-font-size:78px;
+font-size:82px;
 line-height:1.1;
-margin-bottom:15px;
+margin-bottom:18px;
 }
 
 .hero h1 span{
@@ -136,17 +144,17 @@ text-shadow:0 0 25px #00ffc3;
 }
 
 .typing{
+height:40px;
 font-size:28px;
 color:#00ffc3;
-height:40px;
 margin-bottom:25px;
 }
 
 .hero p{
 font-size:22px;
-line-height:1.8;
-max-width:750px;
-color:#cbd5e1;
+line-height:1.9;
+max-width:760px;
+color:#d6e2f0;
 }
 
 .btns{
@@ -160,8 +168,8 @@ flex-wrap:wrap;
 padding:14px 32px;
 border-radius:14px;
 font-size:18px;
-text-decoration:none;
 font-weight:700;
+text-decoration:none;
 transition:0.35s;
 }
 
@@ -173,7 +181,7 @@ box-shadow:0 0 25px #00ffc355;
 
 .primary:hover{
 transform:translateY(-4px);
-box-shadow:0 0 40px #00ffc399;
+box-shadow:0 0 45px #00ffc388;
 }
 
 .secondary{
@@ -187,11 +195,11 @@ color:#000;
 }
 
 .terminal{
-width:420px;
+width:430px;
 background:rgba(255,255,255,0.05);
 border:1px solid rgba(0,255,195,0.2);
-border-radius:24px;
-padding:25px;
+border-radius:28px;
+padding:28px;
 backdrop-filter:blur(18px);
 box-shadow:0 0 40px rgba(0,255,195,0.15);
 animation:float 6s ease-in-out infinite;
@@ -202,19 +210,21 @@ display:flex;
 gap:10px;
 margin-bottom:20px;
 }
+
 .dot{
 width:14px;
 height:14px;
 border-radius:50%;
 }
+
 .red{background:#ff5f56;}
 .yellow{background:#ffbd2e;}
 .green{background:#27c93f;}
 
 .terminal p{
 font-family:monospace;
-margin:14px 0;
 font-size:16px;
+margin:14px 0;
 }
 
 .green-t{color:#00ff8c;}
@@ -227,13 +237,14 @@ padding:100px 8%;
 
 .section-title{
 font-family:'Orbitron',sans-serif;
-font-size:46px;
+font-size:48px;
 margin-bottom:50px;
 color:#00ffc3;
-text-shadow:0 0 20px #00ffc344;
+text-shadow:0 0 20px rgba(0,255,195,0.3);
 }
 
-.about-box,.card{
+.about-box,
+.card{
 background:rgba(255,255,255,0.05);
 border:1px solid rgba(255,255,255,0.08);
 border-radius:28px;
@@ -242,14 +253,16 @@ backdrop-filter:blur(18px);
 transition:0.4s;
 }
 
-.about-box:hover,.card:hover{
+.about-box:hover,
+.card:hover{
 transform:translateY(-8px);
 border-color:#00ffc3;
 box-shadow:0 0 35px rgba(0,255,195,0.15);
 }
 
-.about-box p{
-font-size:22px;
+.about-box p,
+.card p{
+font-size:20px;
 line-height:1.9;
 color:#d6e2f0;
 }
@@ -261,15 +274,9 @@ gap:25px;
 }
 
 .card h3{
-color:#00ffc3;
-margin-bottom:15px;
 font-size:28px;
-}
-
-.card p{
-font-size:19px;
-line-height:1.7;
-color:#cbd5e1;
+margin-bottom:15px;
+color:#00ffc3;
 }
 
 .skill{
@@ -282,13 +289,29 @@ border-left:2px solid #00ffc3;
 padding-left:35px;
 display:flex;
 flex-direction:column;
-gap:30px;
+gap:35px;
 }
 
 .exp-title{
-font-size:30px;
+font-size:32px;
 color:#00ffc3;
-margin-bottom:10px;
+margin-bottom:15px;
+}
+
+.tags{
+display:flex;
+flex-wrap:wrap;
+gap:12px;
+margin-top:18px;
+}
+
+.tech-tag{
+padding:10px 18px;
+border-radius:12px;
+border:1px solid rgba(0,255,195,0.4);
+color:#00ffc3;
+font-size:15px;
+background:rgba(0,255,195,0.08);
 }
 
 .contact-box{
@@ -297,7 +320,6 @@ text-align:center;
 
 .contact-box p{
 font-size:24px;
-color:#d6e2f0;
 margin-top:15px;
 }
 
@@ -317,25 +339,48 @@ transition:1s;
 
 .reveal.active{
 opacity:1;
-transform:translateY(0px);
+transform:translateY(0);
 }
 
 @media(max-width:900px){
-.hero h1{font-size:52px;}
-.hero p{font-size:18px;}
-.typing{font-size:22px;}
-.terminal{width:100%;}
-nav{display:none;}
-.section-title{font-size:34px;}
+
+.hero h1{
+font-size:52px;
 }
+
+.hero p{
+font-size:18px;
+}
+
+.typing{
+font-size:22px;
+}
+
+.terminal{
+width:100%;
+}
+
+nav{
+display:none;
+}
+
+.section-title{
+font-size:36px;
+}
+
+}
+
 </style>
 </head>
+
 <body>
 
 <div class="grid-bg"></div>
 
 <header>
+
 <div class="logo">KHALIL.EXE</div>
+
 <nav>
 <a href="#about">About</a>
 <a href="#skills">Skills</a>
@@ -343,56 +388,79 @@ nav{display:none;}
 <a href="#experience">Experience</a>
 <a href="#contact">Contact</a>
 </nav>
+
 </header>
 
 <section class="hero">
+
 <div class="hero-text reveal">
-<div class="tag">Cyber Security • Infrastructure • ELV</div>
-<h1>Khalil <span>Ahmed</span></h1>
+
+<div class="tag">
+Cyber Security • Infrastructure • ELV • Enterprise Systems
+</div>
+
+<h1>
+Khalil <span>Ahmed</span>
+</h1>
+
 <div class="typing" id="typing"></div>
 
 <p>
-Experienced IT Officer with strong expertise in enterprise infrastructure, ELV systems, monitoring solutions, networking, and operational IT support. Specialized in maintaining stable environments, solving real-world technical problems, and supporting critical systems within industrial operations.
+Experienced IT Officer and Infrastructure Professional with strong expertise in enterprise networking, ELV systems, monitoring solutions, IP surveillance, conferencing technologies, technical operations, and cybersecurity fundamentals.
+<br><br>
+Skilled in supporting critical enterprise environments, troubleshooting complex technical issues, maintaining infrastructure stability, and implementing real-world operational technology solutions across industrial, healthcare, and banking sectors.
 </p>
 
 <div class="btns">
 <a href="#projects" class="btn primary">View Projects</a>
 <a href="#contact" class="btn secondary">Contact Me</a>
 </div>
+
 </div>
 
 <div class="terminal reveal">
+
 <div class="term-head">
 <div class="dot red"></div>
 <div class="dot yellow"></div>
 <div class="dot green"></div>
 </div>
 
-<p class="green-t">[✓] Initializing Enterprise Systems...</p>
-<p class="blue-t">[✓] Monitoring Network Infrastructure...</p>
-<p class="yellow-t">[✓] ELV Systems Connected...</p>
-<p class="green-t">[✓] IP Telephony Operational...</p>
-<p class="blue-t">[✓] Security Monitoring Active...</p>
-<p class="green-t">SYSTEM STATUS: ONLINE</p>
+<p class="green-t">[✓] Enterprise Infrastructure Initialized</p>
+<p class="blue-t">[✓] Monitoring Core Network Systems</p>
+<p class="yellow-t">[✓] ELV & CCTV Systems Connected</p>
+<p class="green-t">[✓] IP Telephony Operational</p>
+<p class="blue-t">[✓] Security Monitoring Enabled</p>
+<p class="green-t">SYSTEM STATUS : ONLINE</p>
+
 </div>
+
 </section>
 
 <section id="about" class="reveal">
+
 <h2 class="section-title">About Me</h2>
+
 <div class="about-box">
+
 <p>
-Software Engineering graduate and experienced IT professional with a strong operational background in enterprise IT infrastructure, networking, monitoring systems, ELV technologies, and technical support environments.
+Software Engineering graduate and experienced IT professional currently serving as an IT Officer at SECMC with hands-on expertise in enterprise infrastructure, networking systems, ELV technologies, technical operations, monitoring platforms, conferencing systems, IP telephony, and operational support.
 <br><br>
-Currently serving as an IT Officer at SECMC, supporting enterprise operations, infrastructure stability, conferencing systems, IP telephony, monitoring dashboards, and technical troubleshooting within industrial environments where reliability and rapid problem-solving are critical.
+Possess practical field experience in deploying and supporting enterprise-level infrastructure solutions including biometric attendance systems, access control systems, IP surveillance, structured cabling, switching environments, and industrial technical operations.
 <br><br>
-Passionate about cybersecurity, automation, infrastructure monitoring, and modern technology solutions with a practical engineering mindset focused on real operational impact.
+Passionate about Cyber Security, Infrastructure Monitoring, Automation, Network Technologies, and solving real-world operational problems through practical engineering and technical innovation.
 </p>
+
 </div>
+
 </section>
 
 <section id="skills" class="reveal">
+
 <h2 class="section-title">Technical Skills</h2>
+
 <div class="grid">
+
 <div class="card"><div class="skill">Cyber Security</div></div>
 <div class="card"><div class="skill">System Administration</div></div>
 <div class="card"><div class="skill">Enterprise Networking</div></div>
@@ -405,85 +473,154 @@ Passionate about cybersecurity, automation, infrastructure monitoring, and moder
 <div class="card"><div class="skill">Python Basics</div></div>
 <div class="card"><div class="skill">Hardware Troubleshooting</div></div>
 <div class="card"><div class="skill">Conferencing Systems</div></div>
+
 </div>
+
 </section>
 
 <section id="projects" class="reveal">
+
 <h2 class="section-title">Projects & Solutions</h2>
+
 <div class="grid">
+
 <div class="card">
-<h3>Internet Speed & IP Report</h3>
+
+<h3>Internet Speed & IP Reporting Solution</h3>
+
 <p>
-Developed a monitoring solution featuring internet diagnostics, service availability testing, IP detection, latency checking, and automated operational reporting.
+Developed an enterprise monitoring solution featuring internet diagnostics, service availability verification, latency monitoring, connectivity checks, IP detection, and automated operational reporting for infrastructure visibility and troubleshooting.
 </p>
+
 </div>
 
 <div class="card">
-<h3>SECMC Service Monitoring Dashboard</h3>
+
+<h3>SECMC Infrastructure Monitoring Dashboard</h3>
+
 <p>
-Designed monitoring interfaces for enterprise services, IP phones, printers, connectivity checks, and infrastructure status visibility.
+Designed operational dashboards for monitoring enterprise services, network connectivity, IP phones, printers, and infrastructure availability to improve operational visibility and technical response efficiency.
 </p>
+
 </div>
 
 <div class="card">
-<h3>Inventory & Handover Management</h3>
+
+<h3>Inventory & Handover Management System</h3>
+
 <p>
-Developed a web-based operational management solution for inventory tracking, task handling, and equipment handover workflows.
+Developed a web-based operational management solution for tracking inventory, handling equipment handovers, monitoring task workflows, and maintaining operational records within technical environments.
 </p>
+
 </div>
 
 <div class="card">
-<h3>ELV & Conferencing Support</h3>
+
+<h3>Enterprise ELV & Conferencing Support</h3>
+
 <p>
-Worked on operational support and troubleshooting for CCTV systems, conferencing environments, IP telephony, and enterprise infrastructure technologies.
+Worked on troubleshooting and operational support for CCTV systems, conferencing environments, IP telephony infrastructure, enterprise monitoring systems, and industrial operational technologies.
 </p>
+
 </div>
+
 </div>
+
 </section>
 
 <section id="experience" class="reveal">
+
 <h2 class="section-title">Professional Experience</h2>
 
 <div class="timeline">
 
 <div class="card">
-<div class="exp-title">IT Officer - SECMC</div>
+
+<div class="exp-title">
+IT Officer - SECMC
+</div>
+
 <p>
-Managing enterprise IT operations, networking, monitoring solutions, ELV systems, conferencing technologies, user support, infrastructure troubleshooting, IP telephony, and operational continuity across industrial environments.
+Managing enterprise IT operations, infrastructure monitoring systems, networking environments, conferencing technologies, ELV systems, IP telephony, troubleshooting activities, operational continuity, and user support within critical industrial environments.
 </p>
+
+<div class="tags">
+<div class="tech-tag">Enterprise Support</div>
+<div class="tech-tag">Monitoring Systems</div>
+<div class="tech-tag">Infrastructure</div>
+<div class="tech-tag">ELV</div>
+<div class="tech-tag">Networking</div>
+</div>
+
 </div>
 
 <div class="card">
-<div class="exp-title">Link Services - Technical Support</div>
+
+<div class="exp-title">
+Zurk Tech / Link Services - Infrastructure & Technical Support Engineer
+</div>
+
 <p>
-Provided technical troubleshooting, infrastructure support, system maintenance, user coordination, and operational assistance for enterprise technical environments.
+Worked on enterprise infrastructure deployment, technical support operations, networking implementation, and ELV system integration for multiple organizational environments including banking, healthcare, and industrial sectors.
+<br><br>
+Participated in deployment and support of Biometric Attendance & Access Control Systems at DOW University including installation, configuration, troubleshooting, implementation support, and client coordination.
+<br><br>
+Contributed to network infrastructure deployment projects at Bank Alfalah involving switches, structured cabling, IP phones, ATMs, CDMs, and IP surveillance systems while assisting with testing, operational connectivity, documentation, and technical support.
+<br><br>
+Also supported deployment of IP CCTV surveillance and networking systems at Power Cement Limited including switch connectivity, structured cabling, technical troubleshooting, and infrastructure implementation activities.
 </p>
+
+<div class="tags">
+<div class="tech-tag">Enterprise Networking</div>
+<div class="tech-tag">Access Control</div>
+<div class="tech-tag">IP Surveillance</div>
+<div class="tech-tag">Structured Cabling</div>
+<div class="tech-tag">Banking Infrastructure</div>
+<div class="tech-tag">Technical Support</div>
+</div>
+
 </div>
 
 <div class="card">
-<div class="exp-title">International Peace Committee Interfaith Harmony</div>
+
+<div class="exp-title">
+International Peace Committee Interfaith Harmony
+</div>
+
 <p>
-Supported organizational IT operations, communication systems, technical coordination, and user support activities.
+Supported organizational IT operations, technical coordination, communication systems, troubleshooting activities, and user support functions for operational continuity.
 </p>
+
 </div>
 
 <div class="card">
-<div class="exp-title">Saath Microfinance Foundation Pakistan</div>
+
+<div class="exp-title">
+Saath Microfinance Foundation Pakistan
+</div>
+
 <p>
-Assisted in technical operations, infrastructure handling, system support, and organizational IT workflows.
+Assisted in organizational IT support, infrastructure handling, system maintenance, troubleshooting, and operational technical workflows.
 </p>
+
 </div>
 
 </div>
+
 </section>
 
 <section id="contact" class="reveal">
+
 <h2 class="section-title">Contact</h2>
+
 <div class="about-box contact-box">
+
 <p>Email: khalilhp10@gmail.com</p>
 <p>Location: Sindh, Pakistan</p>
-<p>Focused on Infrastructure • ELV • Cyber Security • Monitoring Solutions</p>
+<p>Focused on Infrastructure • Cyber Security • ELV • Monitoring Solutions</p>
+
 </div>
+
 </section>
 
 <footer>
@@ -491,7 +628,8 @@ Assisted in technical operations, infrastructure handling, system support, and o
 </footer>
 
 <script>
-const roles=[
+
+const roles = [
 'IT Officer',
 'Cyber Security Enthusiast',
 'Infrastructure Specialist',
@@ -499,43 +637,60 @@ const roles=[
 'Enterprise Support Engineer'
 ];
 
-let i=0;
-let j=0;
-let current='';
-let isDeleting=false;
+let i = 0;
+let j = 0;
+let current = '';
+let isDeleting = false;
 
 function type(){
-current=roles[i];
+
+current = roles[i];
 
 if(!isDeleting){
-document.getElementById('typing').textContent=current.substring(0,j++);
-if(j>current.length){
-isDeleting=true;
+
+document.getElementById('typing').textContent =
+current.substring(0,j++);
+
+if(j > current.length){
+isDeleting = true;
 setTimeout(type,1200);
 return;
 }
+
 }else{
-document.getElementById('typing').textContent=current.substring(0,j--);
-if(j===0){
-isDeleting=false;
-i=(i+1)%roles.length;
+
+document.getElementById('typing').textContent =
+current.substring(0,j--);
+
+if(j === 0){
+isDeleting = false;
+i = (i + 1) % roles.length;
 }
+
 }
-setTimeout(type,isDeleting?50:100);
+
+setTimeout(type,isDeleting ? 50 : 100);
+
 }
 
 type();
 
-const reveals=document.querySelectorAll('.reveal');
+const reveals = document.querySelectorAll('.reveal');
 
 window.addEventListener('scroll',()=>{
+
 reveals.forEach(r=>{
-const top=r.getBoundingClientRect().top;
-if(top<window.innerHeight-100){
+
+const top = r.getBoundingClientRect().top;
+
+if(top < window.innerHeight - 100){
 r.classList.add('active');
 }
+
 });
+
 });
+
 </script>
 
 </body>
